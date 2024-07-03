@@ -5,7 +5,7 @@ import orderRouter from "./src/modules/order/order.routes.js";
 
 const app = express();
 app.use(express.json());
-const port = 3000;
+const port = 8080;
 
 app.use("/users", userRouter);
 app.use("/products", productRouter);
