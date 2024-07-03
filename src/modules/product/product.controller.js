@@ -1,6 +1,4 @@
 import { db } from "../../database/connect.js";
-import bcrypt from "bcrypt";
-const saltRounds = 4;
 
 const getProducts = async (req, res) => {
   db.execute(`SELECT * FROM PRODUCTS`, (err, data) => {
